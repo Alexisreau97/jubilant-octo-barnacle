@@ -1,6 +1,6 @@
 # Line is too long.
 Metrics/LineLength:
-  Max: 120
+  Max: 180
 
 # Missing top-level class documentation comment.
 Documentation:
