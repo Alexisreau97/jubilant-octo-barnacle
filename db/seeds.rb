@@ -7,3 +7,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Item.delete_all
+25.times do |i|
+  Item.create!(
+    title: Faker::Games::SuperSmashBros.fighter,
+    description: Faker::Games::SuperSmashBros.stage,
+    price: Faker::Number.between(1, 10)
+  )
+  p "item #{i} : créé"
+end
