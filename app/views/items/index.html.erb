@@ -1,0 +1,8 @@
+<h1>SUPER SMASH BROS.</h1>
+
+<% @items.each do |item| %>
+	<a href="<%= item_path(item.id) %>"><%= item.title %></a>
+	<%= item.description %>
+	<%= item.price %>
+	<br><br>
+<% end %>
