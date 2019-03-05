@@ -5,6 +5,7 @@
 # Table name: items
 #
 #  id          :bigint(8)        not null, primary key
+#  image_url   :string
 #  title       :string
 #  description :text
 #  price       :integer
