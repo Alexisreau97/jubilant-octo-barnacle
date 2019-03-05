@@ -4,8 +4,9 @@ class ChargesController < ApplicationController
   def new; end
 
   def create
+    @item = Item.find(params[:id])
     # Amount in cents
-    @amount = 500
+    @amount = @item.price * 100
 
     customer = Stripe::Customer.create(
       email: params[:stripeEmail],
@@ -16,7 +17,7 @@ class ChargesController < ApplicationController
       customer: customer.id,
       amount: @amount,
       description: 'Rails Stripe customer',
-      currency: 'usd'
+      currency: 'eur'
     )
   rescue Stripe::CardError => e
     flash[:error] = e.message
