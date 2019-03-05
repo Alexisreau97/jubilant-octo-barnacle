@@ -20,6 +20,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'stripe', '~> 4.9'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem 'unsplash', '~> 1.5', '>= 1.5.5'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

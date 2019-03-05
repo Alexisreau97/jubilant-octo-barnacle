@@ -11,6 +11,7 @@
 Item.delete_all
 25.times do |i|
   Item.create!(
+    image_url: 'https://source.unsplash.com/random/410x255',
     title: Faker::Games::SuperSmashBros.fighter,
     description: Faker::Games::SuperSmashBros.stage,
     price: Faker::Number.between(1, 10)
