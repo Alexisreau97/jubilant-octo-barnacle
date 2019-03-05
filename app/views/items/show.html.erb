@@ -1,5 +1,6 @@
 <h1><%= @item.title %></h1>
 <%= @item.price %>€
+<br><br><br>
 
 <%= form_tag charges_path(id: @item.id) do %>
   <article>
@@ -18,4 +19,5 @@
           data-currency="eur"
           data-locale="auto">
   </script>
+  <button type="submit" class="waves-effect waves-light btn">Pay with Card</button>
 <% end %>

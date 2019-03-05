@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+	margin: 0;
+}
+
+.stripe-button-el {
+  display: none !important;
+}
