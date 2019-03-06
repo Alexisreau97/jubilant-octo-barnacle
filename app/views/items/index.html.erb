@@ -1,10 +1,10 @@
-<h1>eShop</h1>
+<h1 class="center-align">eShop</h1>
 
 <div class="row">
 <% @items.each do |item| %>
-	<div class="card-container col s6">
+	<div class="card-container col m6 l6 ">
 		<a href="<%= item_path(item.id) %>">
-			<%= image_tag item.image_url, class: "card-img" %>
+			<%= image_tag item.image_url, class: "card-img responsive-img" %>
 			<p class="card-title"><%= item.title %></p>
 		</a>
 		<br>
