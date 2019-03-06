@@ -1,12 +1,15 @@
 <h1>eShop</h1>
 
+<div class="row">
 <% @items.each do |item| %>
-	<a href="<%= item_path(item.id) %>">
-		<%= image_tag item.image_url %><br>
-		<%= item.title %>
-	</a>
-	<br>
-	<%= item.description %>
-	<%= item.price %>
-	<br><br>
+	<div class="card-container col s6">
+		<a href="<%= item_path(item.id) %>">
+			<%= image_tag item.image_url, class: "card-img" %>
+			<p class="card-title"><%= item.title %></p>
+		</a>
+		<br>
+		<p class="card-description"><%= item.description %></p>
+		<p class="card-price"><%= item.price %>€</p>
+	</div>
 <% end %>
+</div>
