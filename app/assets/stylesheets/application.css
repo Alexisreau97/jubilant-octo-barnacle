@@ -23,7 +23,7 @@
 }
 
 .card-container {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .card-img {
@@ -40,10 +40,6 @@
   font-size: 22px;
 }
 
-.card-description {
-  
-}
-
-.card-price {
-  
+.pagination {
+	margin-bottom: 60px;
 }
