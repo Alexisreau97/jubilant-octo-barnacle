@@ -15,7 +15,7 @@
  */
 
 * {
-	margin: 0;
+  margin: 0;
 }
 
 .stripe-button-el {
@@ -29,6 +29,18 @@
 .card-img {
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
+  z-index: 0;
+}
+
+.card-price {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: 40px;
+  right: 40px;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
 }
 
 .card-container:hover > a > .card-img {
@@ -36,10 +48,14 @@
   box-shadow: 0 40px 100px -20px rgba(0,0,10,0.2),0 30px 70px -30px rgba(0,0,0,0.4);
 }
 
+.card-container:hover > a > .card-price {
+  transform: scale(1.019) translateY(-2px);
+}
+
 .card-title {
   font-size: 22px;
 }
 
 .pagination {
-	margin-bottom: 60px;
+  margin-bottom: 60px;
 }
