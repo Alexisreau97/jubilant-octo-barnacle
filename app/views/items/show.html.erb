@@ -1,5 +1,5 @@
 <h1><%= @item.title %></h1>
-<%= @item.price %>€
+<b><%= @item.price %>€</b>
 <br><br><br>
 
 <%= form_tag charges_path(id: @item.id) do %>
