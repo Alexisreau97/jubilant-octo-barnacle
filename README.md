@@ -1,24 +1,7 @@
-# README
+# jubilant-octo-barnacle
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a minimalist ecommerce app
 
-Things you may want to cover:
+![Screenshot](https://image.noelshack.com/fichiers/2019/11/4/1552559304-eshop-app.png)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Lets go to the web site](https://jubilant-octo-barnacle-prod.herokuapp.com)
